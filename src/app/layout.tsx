@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'Aadesh Gulumbe - Full Stack Developer | React, Node.js, TypeScript Expert',
     template: '%s | Aadesh Gulumbe - Full Stack Developer'
   },
-  description: 'Aadesh Gulumbe is a passionate Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities in Mumbai, India.',
+  description: 'Aadesh Gulumbe is a passionate Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities in Pune, India.',
   keywords: [
     'Aadesh Gulumbe',
     'Full Stack Developer',
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     'Node.js Developer', 
     'TypeScript Developer',
     'JavaScript Developer',
-    'Web Developer Mumbai',
+    'Web Developer Pune',
     'Frontend Developer',
     'Backend Developer',
     'Software Engineer',
-    'Freelance Developer Mumbai',
+    'Freelance Developer Pune',
     'Portfolio',
-    'Mumbai Developer',
+    'Pune Developer',
     'India Developer',
     'Next.js Developer',
     'MongoDB Developer',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     'Database Design',
     'UI/UX Developer',
     'Full Stack Engineer India',
-    'Web Development Services Mumbai'
+    'Web Development Services Pune'
   ],
   authors: [{ name: 'Aadesh Gulumbe', url: 'https://aadeshgulumbe.vercel.app' }],
   creator: 'Aadesh Gulumbe',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     url: 'https://aadeshgulumbe.vercel.app',
     siteName: 'Aadesh Gulumbe - Full Stack Developer',
     title: 'Aadesh Gulumbe - Full Stack Developer | React, Node.js, TypeScript Expert',
-    description: 'Passionate Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities in Mumbai, India.',
+    description: 'Passionate Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities in Pune, India.',
     images: [
       {
         url: '/profile.jpeg',
@@ -111,7 +111,7 @@ const jsonLd = {
   ],
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Mumbai',
+    addressLocality: 'Pune',
     addressRegion: 'Maharashtra',
     addressCountry: 'India'
   },
@@ -147,7 +147,7 @@ export default function RootLayout({
         
         {/* Geo Tags for Local SEO */}
         <meta name="geo.region" content="IN-MH" />
-        <meta name="geo.placename" content="Mumbai" />
+        <meta name="geo.placename" content="Pune" />
         <meta name="geo.position" content="19.0760;72.8777" />
         <meta name="ICBM" content="19.0760, 72.8777" />
         
