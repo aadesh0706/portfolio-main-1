@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aadesh Gulumbe - Portfolio Website
+
+This is a modern, responsive personal portfolio website built with Next.js, TypeScript, TailwindCSS, and Framer Motion.
+
+## Features
+
+- ✅ **Hero section** with name, tagline, and call-to-action buttons
+- ✅ **About Me section** with personal bio
+- ✅ **Projects section** that dynamically fetches GitHub repositories
+- ✅ **Contact section** with email and contact form
+- ✅ **Dark mode toggle** with system preference detection
+- ✅ **Responsive design** for all screen sizes
+- ✅ **Smooth animations** using Framer Motion
+- ✅ **Modern UI** with TailwindCSS styling
+
+## Technologies Used
+
+- **Next.js 15** - React framework
+- **TypeScript** - Type safety
+- **TailwindCSS** - Styling
+- **Framer Motion** - Animations
+- **Lucide React** - Icons
+- **GitHub API** - Dynamic project fetching
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css     # Global styles and CSS variables
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Main portfolio page
+```
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+To customize this portfolio for your own use:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Update personal information** in `src/app/page.tsx`:
+   - Change name from "Aadesh Gulumbe"
+   - Update tagline
+   - Replace GitHub username in API calls
+   - Update LinkedIn and GitHub profile links
+   - Replace email address
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Modify the About section** with your own bio
 
-## Deploy on Vercel
+3. **Update contact information** in the contact section
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features in Detail
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Dynamic GitHub Integration
+- Automatically fetches your latest repositories
+- Filters out profile and GitHub Pages repos
+- Sorts by last updated date
+- Shows top 6 projects
+- Displays repo name, description, stars, and programming language
+
+### Dark Mode
+- Respects system preferences
+- Remembers user choice in localStorage
+- Smooth transitions between themes
+
+### Responsive Design
+- Mobile-first approach
+- Optimized for all screen sizes
+- Touch-friendly interactions
+
+### Performance
+- Optimized with Next.js App Router
+- Lazy loading and efficient animations
+- Minimal bundle size
+
+## Deployment
+
+This project can be easily deployed on platforms like:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **GitHub Pages**
+- **Any hosting provider that supports Node.js**
+
+For Vercel deployment:
+```bash
+npm run build
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
