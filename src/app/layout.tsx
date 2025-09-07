@@ -118,7 +118,7 @@ const jsonLd = {
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'professional',
-    email: 'aadeshgulumbe@example.com'
+    email: 'aadeshgulumbe3@gmail.com'
   }
 };
 
