@@ -1090,7 +1090,7 @@ export default function Home() {
                   </motion.a>
                   
                   <motion.a
-                    href="tel:+919876543210"
+                    href="tel:+919923608616"
                     whileHover={{ scale: 1.05, x: 5 }}
                     className="flex items-center space-x-4 text-white hover:text-blue-100 transition-all duration-300"
                   >

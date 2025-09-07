@@ -152,8 +152,8 @@ export default function RootLayout({
         <meta name="ICBM" content="19.0760, 72.8777" />
         
         {/* Business Info */}
-        <meta name="contact" content="aadeshgulumbe@example.com" />
-        <meta name="reply-to" content="aadeshgulumbe@example.com" />
+        <meta name="contact" content="aadeshgulumbe3@gmail.com" />
+        <meta name="reply-to" content="aadeshgulumbe3@gmail.com" />
         <meta name="owner" content="Aadesh Gulumbe" />
         
         {/* Favicon and Icons */}
