@@ -1,5 +1,5 @@
 export default function sitemap() {
-const baseUrl = 'https://www.aadeshgulumbe.live'
+const baseUrl = 'https://aadeshgulumbe.live'
   return [
     {
       url: baseUrl,

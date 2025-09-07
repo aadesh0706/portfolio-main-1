@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = 'https://aadeshgulumbe.vercel.app'
+  const baseUrl = 'https://aadeshgulumbe.live'
   
   return {
     rules: {

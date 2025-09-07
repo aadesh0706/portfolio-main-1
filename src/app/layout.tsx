@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://aadeshgulumbe.vercel.app'),
+  metadataBase: new URL('https://aadeshgulumbe.live'),
   title: {
     default: 'Aadesh Gulumbe - Full Stack Developer | React, Node.js, TypeScript Expert',
     template: '%s | Aadesh Gulumbe - Full Stack Developer'
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://aadeshgulumbe.vercel.app',
+    url: 'https://aadeshgulumbe.live',
     siteName: 'Aadesh Gulumbe - Full Stack Developer',
     title: 'Aadesh Gulumbe - Full Stack Developer | React, Node.js, TypeScript Expert',
     description: 'Passionate Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies. Available for freelance projects and full-time opportunities in Pune, India.',
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     site: '@aadesh0706',
   },
   alternates: {
-    canonical: 'https://aadeshgulumbe.vercel.app',
+    canonical: 'https://aadeshgulumbe.live',
   },
   category: 'technology',
 };
@@ -92,8 +92,8 @@ const jsonLd = {
   name: 'Aadesh Gulumbe',
   alternateName: ['Aadesh', 'Aadesh G'],
   description: 'Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies',
-  url: 'https://aadeshgulumbe.vercel.app',
-  image: 'https://aadeshgulumbe.vercel.app/profile.jpeg',
+  url: 'https://aadeshgulumbe.live',
+  image: 'https://aadeshgulumbe.live/profile.jpeg',
   sameAs: [
     'https://github.com/aadesh0706',
     'https://linkedin.com/in/aadeshgulumbe',
