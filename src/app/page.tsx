@@ -536,7 +536,7 @@ export default function Home() {
                 >
                   <MapPin className="w-4 h-4" />
                   <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                    <span itemProp="addressLocality">Mumbai</span>, <span itemProp="addressCountry">India</span>
+                    <span itemProp="addressLocality">Pune</span>, <span itemProp="addressCountry">India</span>
                   </span>
                   <span className="mx-2">•</span>
                   <Calendar className="w-4 h-4" />
@@ -551,7 +551,7 @@ export default function Home() {
                   Experienced <strong>Full Stack Developer</strong> specializing in <strong>React.js</strong>, <strong>Node.js</strong>, 
                   <strong>TypeScript</strong>, and modern web technologies. I build scalable, high-performance web applications 
                   and deliver exceptional user experiences. Available for <strong>freelance projects</strong> and 
-                  <strong>full-time opportunities</strong> in Mumbai, India.
+                  <strong>full-time opportunities</strong> in Pune, India.
                 </motion.p>
               </div>
               
