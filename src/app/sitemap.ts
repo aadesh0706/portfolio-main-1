@@ -1,6 +1,4 @@
 export default function sitemap() {
-//   const baseUrl = 'https://aadeshgulumbe.vercel.app'
-
 const baseUrl = 'https://www.aadeshgulumbe.live'
   return [
     {
