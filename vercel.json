@@ -5,7 +5,6 @@
   "devCommand": "npm run dev",
   "framework": "nextjs",
   "regions": ["iad1"],
-  "functions": {},
   "headers": [
     {
       "source": "/(.*)",
