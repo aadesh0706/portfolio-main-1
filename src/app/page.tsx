@@ -1099,7 +1099,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-semibold">Phone</p>
-                      <p className="text-blue-100 text-sm">+91 98765 43210</p>
+                      <p className="text-blue-100 text-sm">+91 9923608616</p>
                     </div>
                   </motion.a>
                   
