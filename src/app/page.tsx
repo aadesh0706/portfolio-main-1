@@ -485,7 +485,7 @@ export default function Home() {
                 <Linkedin size={20} className="text-blue-600" />
               </motion.a>
               <motion.a
-                href="mailto:aadeshgulumbe@example.com"
+                href="mailto:aadeshgulumbe3@gmail.com"
                 whileHover={{ scale: 1.1, y: -2 }}
                 className="p-2 bg-slate-100 dark:bg-slate-800 rounded-lg"
               >
@@ -604,7 +604,7 @@ export default function Home() {
                   <Linkedin size={24} className="text-blue-600" />
                 </motion.a>
                 <motion.a
-                  href="mailto:aadeshgulumbe@example.com"
+                  href="mailto:aadeshgulumbe3@gmail.com"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.9 }}
                   className="p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 dark:border-slate-700"
@@ -1076,7 +1076,7 @@ export default function Home() {
                 
                 <div className="space-y-6">
                   <motion.a
-                    href="mailto:aadeshgulumbe@example.com"
+                    href="mailto:aadeshgulumbe3@gmail.com"
                     whileHover={{ scale: 1.05, x: 5 }}
                     className="flex items-center space-x-4 text-white hover:text-blue-100 transition-all duration-300"
                   >
@@ -1085,7 +1085,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-semibold">Email</p>
-                      <p className="text-blue-100 text-sm">aadeshgulumbe@example.com</p>
+                      <p className="text-blue-100 text-sm">aadeshgulumbe3@gmail.com</p>
                     </div>
                   </motion.a>
                   
@@ -1249,7 +1249,7 @@ export default function Home() {
                    className="text-slate-400 hover:text-white transition-colors">
                   <Linkedin size={20} />
                 </a>
-                <a href="mailto:aadeshgulumbe@example.com" 
+                <a href="mailto:aadeshgulumbe3@gmail.com" 
                    className="text-slate-400 hover:text-white transition-colors">
                   <Mail size={20} />
                 </a>
