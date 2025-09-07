@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Moon, Sun, ExternalLink, Star, Code, MapPin, Phone, Calendar, Award, Briefcase, GraduationCap, Menu, X } from 'lucide-react';
+import { Github, Linkedin, Mail, Moon, Sun, ExternalLink, Star, Code, MapPin, Phone, Calendar, Award, Briefcase, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 
 interface Repository {
@@ -38,6 +38,49 @@ export default function Home() {
   const [repos, setRepos] = useState<Repository[]>([]);
   const [loading, setLoading] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // SEO-optimized structured data
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': 'https://aadeshgulumbe.vercel.app/#webpage',
+        url: 'https://aadeshgulumbe.vercel.app/',
+        name: 'Aadesh Gulumbe - Full Stack Developer Portfolio',
+        isPartOf: { '@id': 'https://aadeshgulumbe.vercel.app/#website' },
+        primaryImageOfPage: { '@id': 'https://aadeshgulumbe.vercel.app/profile.jpeg' },
+        datePublished: '2025-09-07T00:00:00+00:00',
+        dateModified: '2025-09-07T00:00:00+00:00',
+        description: 'Professional portfolio of Aadesh Gulumbe, showcasing full stack web development projects, skills, and experience in React, Node.js, and TypeScript.'
+      },
+      {
+        '@type': 'WebSite',
+        '@id': 'https://aadeshgulumbe.vercel.app/#website',
+        url: 'https://aadeshgulumbe.vercel.app/',
+        name: 'Aadesh Gulumbe Portfolio',
+        description: 'Full Stack Developer Portfolio',
+        publisher: { '@id': 'https://aadeshgulumbe.vercel.app/#person' },
+        inLanguage: 'en-US'
+      },
+      {
+        '@type': 'Person',
+        '@id': 'https://aadeshgulumbe.vercel.app/#person',
+        name: 'Aadesh Gulumbe',
+        image: {
+          '@type': 'ImageObject',
+          '@id': 'https://aadeshgulumbe.vercel.app/profile.jpeg',
+          url: 'https://aadeshgulumbe.vercel.app/profile.jpeg',
+          caption: 'Aadesh Gulumbe - Full Stack Developer'
+        },
+        description: 'Experienced Full Stack Developer specializing in React.js, Node.js, TypeScript, and modern web technologies',
+        sameAs: [
+          'https://github.com/aadesh0706',
+          'https://linkedin.com/in/aadeshgulumbe'
+        ]
+      }
+    ]
+  };
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -230,7 +273,14 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 transition-all duration-300">
+    <>
+      {/* SEO Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 transition-all duration-300">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg z-50 border-b border-slate-200/50 dark:border-slate-700/50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -446,8 +496,8 @@ export default function Home() {
         </motion.div>
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Hero Section - SEO Optimized */}
+      <section id="home" className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden" itemScope itemType="https://schema.org/Person">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900"></div>
         <div className="relative max-w-7xl mx-auto">
           <motion.div
@@ -465,6 +515,7 @@ export default function Home() {
                 <motion.h1
                   variants={itemVariants}
                   className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white mb-4"
+                  itemProp="name"
                 >
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                     Aadesh Gulumbe
@@ -476,7 +527,7 @@ export default function Home() {
                   className="flex items-center space-x-2 text-lg text-slate-600 dark:text-slate-300 mb-4"
                 >
                   <Code className="w-5 h-5 text-blue-600" />
-                  <span className="font-semibold">Software Developer | IoT & Web Enthusiast</span>
+                  <span className="font-semibold" itemProp="jobTitle">Full Stack Developer | React.js Expert | Node.js Specialist</span>
                 </motion.div>
                 
                 <motion.div
@@ -484,19 +535,23 @@ export default function Home() {
                   className="flex items-center space-x-2 text-slate-500 dark:text-slate-400 mb-6"
                 >
                   <MapPin className="w-4 h-4" />
-                  <span>India</span>
+                  <span itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                    <span itemProp="addressLocality">Mumbai</span>, <span itemProp="addressCountry">India</span>
+                  </span>
                   <span className="mx-2">•</span>
                   <Calendar className="w-4 h-4" />
-                  <span>Available for opportunities</span>
+                  <span>Available for hiring</span>
                 </motion.div>
                 
                 <motion.p
                   variants={itemVariants}
                   className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8"
+                  itemProp="description"
                 >
-                  Passionate software developer specializing in modern web technologies and IoT solutions. 
-                  I create innovative, scalable applications that solve real-world problems and deliver 
-                  exceptional user experiences.
+                  Experienced <strong>Full Stack Developer</strong> specializing in <strong>React.js</strong>, <strong>Node.js</strong>, 
+                  <strong>TypeScript</strong>, and modern web technologies. I build scalable, high-performance web applications 
+                  and deliver exceptional user experiences. Available for <strong>freelance projects</strong> and 
+                  <strong>full-time opportunities</strong> in Mumbai, India.
                 </motion.p>
               </div>
               
@@ -1233,6 +1288,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
