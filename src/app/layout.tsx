@@ -199,6 +199,7 @@ export default function RootLayout({
             });
           `}
         </Script>
+        <script src="https://cdn.interaone.app/interaone-widget/v1/InteraOne.js?v=2" data-InteraOne-public-key="6a14765be22c3f178f258381" async></script>
       </body>
     </html>
   );
